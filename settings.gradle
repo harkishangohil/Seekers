@@ -1,0 +1,3 @@
+include ':SeekersLibrary'
+include ':app'
+rootProject.name = "Seekers"
