@@ -1,5 +1,13 @@
 apply plugin: 'com.android.library'
 
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+group = 'com.github.jitpack'
+version = '1.0'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
@@ -19,6 +27,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
